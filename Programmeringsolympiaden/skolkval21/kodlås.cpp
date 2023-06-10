@@ -20,14 +20,6 @@ string shiftString(string s){
     return str;
 }
 
-void printV(vector<int> rsy){
-    for (auto e : rsy){
-        cout << e << " ";
-    }
-    cout << endl;
-    return;
-}
-
 long long recursion(string s, int k, vector<int> b){
     if (M.find({{s, k}, b}) != M.end()){
         return M[{{s, k}, b}];
