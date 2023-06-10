@@ -46,8 +46,8 @@ int main(){
     for (int i = 0; i < products.size(); i++){
         ll x = products[i];
         for (int j = n-1; j >= 0; j--){
-            ll y = floor(x/pow(2, j));
-            x -= min(y, coins[j])*pow(2, j);
+            ll y = floor(x/(1LL << j));
+            x -= min(y, coins[j])*(1LL << j);
             coins[j] -= min(y, coins[j]);
         }
         if (x > 0){
