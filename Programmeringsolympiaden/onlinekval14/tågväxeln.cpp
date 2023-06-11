@@ -21,16 +21,13 @@ int main(){
         vaxel = false;
     }
 
-
     for (int i = 1; i < 1440; i++){
         if (count(all(first), i) == 1 && !vaxel){
             neW = true;
             change++;
-            //cout << i << "     " << vaxel << endl;
         } else if (count(all(second), i) == 1 && vaxel){
             neW = false;
             change++;
-            //cout << i << " " << change << endl;
         }
 
         vaxel = neW;
