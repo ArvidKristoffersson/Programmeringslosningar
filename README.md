@@ -1,1 +1,2 @@
 # Programmeringslösningar
+Lösningar till uppgifter från diverse tävlingar och tävlingsprogrammeringshemsidor
